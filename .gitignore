@@ -1,2 +1,5 @@
 *.class
 *.log
+
+# Go vendor folder
+vendor
