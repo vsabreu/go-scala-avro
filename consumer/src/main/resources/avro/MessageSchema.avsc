@@ -1,0 +1,28 @@
+{
+    "type":"record",
+    "name":"Message",
+    "doc:":"A basic schema for storing message data",
+    "namespace":"com.github.vsabreu.go_scala_avro",
+    "fields":[
+        {
+            "doc":"Message number",
+            "type":"int",
+            "name":"id"
+        },
+        {
+            "doc":"Date of collect",
+            "type":"long",
+            "name":"collected_at"
+        },
+        {
+            "doc":"User name",
+            "type":"string",
+            "name":"user"
+        },
+        {
+            "doc":"Random key",
+            "type":"string",
+            "name":"key"
+        }
+    ]
+}
