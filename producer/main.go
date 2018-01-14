@@ -33,12 +33,9 @@ func init() {
 
 func main() {
 	msgs := make(chan *Message, *msgsNum)
-	done := make(chan bool)
 
 	go buildMessages(msgs)
-	go produceMessages(msgs, done)
-
-	<-done
+	produceMessages(msgs)
 }
 
 func buildMessages(msgs chan<- *Message) {
@@ -48,11 +45,10 @@ func buildMessages(msgs chan<- *Message) {
 	close(msgs)
 }
 
-func produceMessages(msgs <-chan *Message, done chan<- bool) {
+func produceMessages(msgs <-chan *Message) {
 	for m := range msgs {
 		sendToKafka(m)
 	}
-	done <- true
 }
 
 func sendToKafka(msg *Message) {
