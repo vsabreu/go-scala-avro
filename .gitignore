@@ -1,5 +1,16 @@
+# Scala stuff
+# ---------------------
 *.class
 *.log
+.DS_Store
+target
+*.iml
+*.ipr
+*.iws
+.idea
+out
 
-# Go vendor folder
+
+# Go stuff
+# ---------------------
 vendor
