@@ -8,13 +8,7 @@ import (
 	"github.com/linkedin/goavro"
 )
 
-const (
-	letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-	schema  = `{"type":"record","name":"message","doc:":"A basic schema for storing message data",
-		"namespace":"com.goscalaavro","fields":[{"doc":"Message number","type":"int","name":"id"},
-		{"doc":"Date of collect","type":"long","name":"collected_at"},
-		{"doc":"User name","type":"string","name":"user"},{"doc":"Random key","type":"string","name":"key"}]}`
-)
+const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 // Message represents a message for Kafka
 type Message struct {

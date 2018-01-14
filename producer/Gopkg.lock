@@ -39,6 +39,12 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/elodina/go-kafka-avro"
+  packages = ["."]
+  revision = "ab6b1d1c9a2361e639af25c13653fee505b5d2ce"
+
+[[projects]]
+  branch = "master"
   name = "github.com/golang/snappy"
   packages = ["."]
   revision = "553a641470496b2327abcac10b36396bd98e45c9"
@@ -70,6 +76,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "be451d1f94746cdc05ba160dfefe6e3a4723574596cb7f91fdc7525ad5294efd"
+  inputs-digest = "cb80b313635901457925cee393fc81414dd092b48c0e01d95ddbcc5e070f5cad"
   solver-name = "gps-cdcl"
   solver-version = 1
