@@ -20,10 +20,10 @@ const (
 	kafkaTopic        = "go-scala-avro-topic"
 	schemaRegistryURL = "http://127.0.0.1:8081"
 	schemaName        = "Message"
-	schema            = `{"type":"record","name":"message","doc:":"A basic schema for storing message data",
-		"namespace":"com.goscalaavro","fields":[{"doc":"Message number","type":"int","name":"id"},
-		{"doc":"Date of collect","type":"long","name":"collected_at"},
-		{"doc":"User name","type":"string","name":"user"},{"doc":"Random key","type":"string","name":"key"}]}`
+	schema            = `{"type":"record","name":"Message","doc:":"A basic schema for storing message data",
+	"namespace":"com.github.vsabreu.go_scala_avro","fields":[{"doc":"Message number","type":"int","name":"id"},
+	{"doc":"Date of collect","type":"long","name":"collected_at"},{"doc":"User name","type":"string","name":"user"},
+	{"doc":"Random key","type":"string","name":"key"}]}`
 )
 
 func init() {
